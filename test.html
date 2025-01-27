@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Thumbnail -->
+<div class="project" onclick="openModal('index.html')">
+    <img src="thumbnail1.jpg" alt="Project 1">
+    <p>Project 1</p>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe id="modal-content" src="" frameborder="0"></iframe>
+</div>
+
+<script>
+function openModal(url) {
+    document.getElementById('modal-content').src = url;
+    document.getElementById('modal').style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = "none";
+    document.getElementById('modal-content').src = ""; // Clear the src
+}
+</script>
+
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal iframe {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: block;
+    border: none;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+</style>
+
+</body>
+</html>

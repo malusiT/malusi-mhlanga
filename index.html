@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Malusi Mhlanga Portfolio</title>
+</head>
+<body>
+    <header>
+        <div id="greeting">Hey, there 👋</div>
+        <nav id="navbar">
+            <ul id="nav-ul">
+                <li class="nav-list" id="home"><a href="#home">Home</a></li>
+                <li class="nav-list" ><a href="#projects">Projects</a></li>
+                <li class="nav-list"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-section">
+            <h1>Malusi Thabo Mhlanga</h1>
+            <p id="job-title">Frontend web developer</p>
+        </div>
+       
+        <div id="description">
+
+            
+            <img src="1000082572-01.jpeg" width="300" height="450" id="my-image" alt="my-profile-picure">
+            <div id="technologies">
+                <h3 id="tech-heading">Technologies</h3>
+                <div class="underline"></div>
+                <div id="tech">
+                    <div class="tech-name">
+                        <img src="html-icon.svg" alt="Html-icon" class="web-tech-img" id="html" height="200" width="200">
+                        <p class="lang-name">HTML</p>
+                    </div>
+                    <div>
+                        <img src="css-icon.svg" alt="Html-icon" class="web-tech-img" id="html" height="200" width="200">
+                        <p class="lang-name">CSS</p>
+                    </div>
+                    <div>
+                        <img src="javascript-icon.svg" alt="javascript-icon" class="web-tech-img" id="js" height="200" width="200">
+                        <p class="lang-name">Javascript</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="about-me" id="about">
+            <p>Frontend Web Developer passionate about creating clean, user-friendly websites.</p>
+            <p>Currently learning React to enhance my skills, I aspire to become a Fullstack Developer.</p>
+            <p>Check out my projects to see my work!</p>
+        </div>
+        <div id="projects">
+            <div class="the-projects">
+                <iframe src="https://malusit.github.io/Elevate-Consulting-Solutions-Webpage/" 
+                        width="100%" 
+                        height="500px"
+                        class="project-iframe"
+                        >
+                </iframe>
+                <div class="project-buttons">
+                    <button class="view-live">View live</button>
+                    <button class="source-code">Source Code</button>
+                </div>
+            </div>
+            <div class="the-projects">
+                <iframe 
+                    src="https://malusit.github.io/Elevate-Consulting-Solutions-Webpage/" 
+                    width="100%" 
+                    height="500px" 
+                    class="project-iframe"
+                    style="overflow: hidden; border: none; scrollbar-width: none;">
+                </iframe>
+                <div class="project-buttons">
+                    <button class="view-live">View live</button>
+                    <button class="source-code">Source Code</button>
+                </div>
+            </div>
+            <div class="the-projects">
+                <iframe src="https://malusit.github.io/Recipe-Repository/" 
+                        width="100%" 
+                        height="500px"
+                        class="project-iframe"
+                        >
+                </iframe>
+                <div class="project-buttons">
+                    <button class="view-live">View live</button>
+                    <button class="source-code">Source Code</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <form action="post">
+                <label for="contact-name">Firstname</label>
+                <input type="text" id="first-name">
+                <label>Lastname</label>
+                <input type="text" name="" id="last-name">
+                <label for="email">Email</label>
+                <input type="email" name="" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="50" rows="20"></textarea>
+                <input type="submit" value="Contact">
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
