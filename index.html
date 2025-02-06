@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Malusi Mhlanga Portfolio</title>
 </head>
 <body>
@@ -26,21 +27,21 @@
         <div id="description">
 
             
-            <img src="1000082572-01.jpeg" width="300" height="450" id="my-image" alt="my-profile-picure">
+            <img src="1000082572-01.jpeg" width="300" height="450" id="my-image" alt="my-profile-picure" >
             <div id="technologies">
-                <h3 id="tech-heading">Technologies</h3>
-                <div class="underline"></div>
+                <!-- <h3 id="tech-heading">Technologies</h3> -->
+                <!-- <div class="underline"></div> -->
                 <div id="tech">
                     <div class="tech-name">
-                        <img src="html-icon.svg" alt="Html-icon" class="web-tech-img" id="html" height="200" width="200">
+                        <img src="html-icon.svg" alt="Html-icon" class="web-tech-img" id="html-icon" height="100" width="100">
                         <p class="lang-name">HTML</p>
                     </div>
                     <div>
-                        <img src="css-icon.svg" alt="Html-icon" class="web-tech-img" id="html" height="200" width="200">
+                        <img src="css-icon.svg" alt="css-icon" class="web-tech-img" id="css-icon" height="100" width="100">
                         <p class="lang-name">CSS</p>
                     </div>
                     <div>
-                        <img src="javascript-icon.svg" alt="javascript-icon" class="web-tech-img" id="js" height="200" width="200">
+                        <img src="javascript-icon.svg" alt="javascript-icon" class="web-tech-img" id="js-icon" height="100" width="100">
                         <p class="lang-name">Javascript</p>
                     </div>
                 </div>
@@ -53,45 +54,38 @@
             <p>Check out my projects to see my work!</p>
         </div>
         <div id="projects">
-            <div class="the-projects">
-                <iframe src="https://malusit.github.io/Elevate-Consulting-Solutions-Webpage/" 
-                        width="100%" 
-                        height="500px"
-                        class="project-iframe"
-                        >
-                </iframe>
+            <!-- Calculator Project -->
+            <div class="project-card">
+                <img src="project-img/calculator-X_img.png" alt="Calculator Project Screenshot" class="project-image" width="500">
+                <h3 class="project-title">Calculator</h3>
+                <p class="project-description">A simple calculator web application built using HTML, CSS, and JavaScript.</p>
                 <div class="project-buttons">
-                    <button class="view-live">View live</button>
-                    <button class="source-code">Source Code</button>
+                    <a href="https://malusit.github.io/CalculatorX/" target="_blank" class="view-live">Live Demo</a>
+                    <a href="https://github.com/malusiT/CalculatorX" target="_blank" class="source-code">Source Code</a>
                 </div>
             </div>
-            <div class="the-projects">
-                <iframe 
-                    src="https://malusit.github.io/Elevate-Consulting-Solutions-Webpage/" 
-                    width="100%" 
-                    height="500px" 
-                    class="project-iframe"
-                    style="overflow: hidden; border: none; scrollbar-width: none;">
-                </iframe>
+            
+            <!-- Elevate Consulting Solutions Project -->
+            <div class="project-card">
+                <img src="project-img/elevate_consulting_solutions_webpage_img.png" alt="Elevate Consulting Solutions Project Screenshot" class="project-image" height="400">
+                <h3 class="project-title">Elevate Consulting Solutions Webpage</h3>
+                <p class="project-description">Company webpage to showcase services provided by a company.</p>
                 <div class="project-buttons">
-                    <button class="view-live">View live</button>
-                    <button class="source-code">Source Code</button>
+                    <a href="https://malusit.github.io/Elevate-Consulting-Solutions-Webpage/" target="_blank" class="view-live">Live Demo</a>
+                    <a href="https://github.com/malusiT/Elevate-Consulting-Solutions-Webpage/" target="_blank" class="source-code">Source Code</a>
                 </div>
             </div>
-            <div class="the-projects">
-                <iframe src="https://malusit.github.io/Recipe-Repository/" 
-                        width="100%" 
-                        height="500px"
-                        class="project-iframe"
-                        >
-                </iframe>
+            
+            <!-- Recipe Repository Project -->
+            <div class="project-card">
+                <img src="project-img/recipe_repo_img.png" alt="Recipe Repository Project Screenshot" class="project-image" width="500">
+                <h3 class="project-title">Recipe Repository</h3>
+                <p class="project-description">A recipe web app to store your recipes locally on your machine.</p>
                 <div class="project-buttons">
-                    <button class="view-live">View live</button>
-                    <button class="source-code">Source Code</button>
+                    <a href="https://malusit.github.io/Recipe-Repository/" target="_blank" class="view-live">Live Demo</a>
+                    <a href="https://github.com/malusiT/Recipe-Repository" target="_blank" class="source-code">Source Code</a>
                 </div>
             </div>
-
-
         </div>
         <div id="contact">
             <h2>Contact Me</h2>
@@ -107,6 +101,21 @@
                 <input type="submit" value="Contact">
             </form>
         </div>
+
+        <footer>
+            <div class="socials">
+                <ul>
+                    <li class="link"><img src="footer-icons/facebook-icon.svg" alt="" srcset=""></li>
+                    <li class="link"><img src="footer-icons/twitter-icon.svg" alt="" srcset=""></li>
+                    <li class="link"><img src="footer-icons/github-icon.svg" alt="" srcset=""></li>
+                </ul>
+            </div>
+            <div class="info">
+                    <div class="terms-privacy">
+                        <a href="">Terms</a> | <a href="">Privacy</a>
+                    </div>
+            </div>
+        </footer>
     </main>
 
     <script src="script.js"></script>

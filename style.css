@@ -1,9 +1,9 @@
 *{
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
-    background-color: grey;
+    scroll-behavior: smooth;    /* background-color: grey; */
     color: #000;
+    line-height: 1.5;
 }
 
 header{
@@ -121,19 +121,17 @@ h1{
     padding: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     /* background-color: orangered; */
     /* padding: 20px 50px 20px 50px; */
 }
 #technologies{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #ff54b4; */
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-template-rows: auto auto; /* 2 rows, height based on content */
+    gap: 10px; /* Space between grid items */
     margin: 10px 30px 10px 30px;
-    /* width: ; */
 }
 #tech{
     margin: 15px;
@@ -183,33 +181,52 @@ img:hover{
     font-size: 30px;
     font-weight: 800;
 }
-iframe {
-    overflow: hidden; /* Hides the scrollbar */
-    border: none; /* Removes any border around the iframe */
+#about p:hover{
+    background-color: #000;
+    color: #ff4500;
+    border-radius: 10px;
 }
-#projects{
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    margin: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff; /* Card background */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.project-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.project-title {
+    font-size: 24px; /* Title size */
+    margin: 10px 0; /* Margin around title */
+}
+
+.project-description {
+    font-size: 16px; /* Description size */
+    padding: 0 10px; /* Padding for description */
+}
+
+.project-buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.project-iframe {
-    overflow: hidden; /* Prevents content from overflowing */
-    border: none; /* Removes the border around the iframe */
-    width: 100%; /* Makes the iframe full width */
-    height: 500px; /* Sets the height of the iframe */
-    scrollbar-width: none; /* Hides scrollbar in Firefox */
-}
-
-.project-iframe::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in WebKit browsers like Chrome and Safari */
-}
-
-.project-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2;
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 10px; /* Margin below buttons */
 }
 
 .view-live{
